@@ -1,0 +1,11 @@
+# This is a sample config file
+# Configurations are deliminated with a space
+
+# Configurations
+Test 123 # Comments can go after the configs
+Color Red
+Brightness 100
+
+# More Configurations
+root yes
+mode on

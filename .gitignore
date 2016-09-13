@@ -3,3 +3,6 @@ backups/
 hosts/private
 *.py[cod]
 *.swp
+msieve.*
+reconstructor.py
+reconstructor_decode.py
