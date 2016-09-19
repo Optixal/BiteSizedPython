@@ -2,6 +2,8 @@
 
 # Optixal
 
+# All Print Representation is in Hex
+
 # Encrypt ASCII plaintext
 # Using AES-CBC PKCS#7
 # with random 256-bit key
@@ -38,8 +40,9 @@ def main():
 
     # Encrypt
     cipher = AES.new(key, AES.MODE_CBC, iv)
-    ciphertext = iv + cipher.encrypt(plaintext)
+    ciphertext = cipher.encrypt(plaintext)
     print(template.format("Ciphertext", hexify(ciphertext)))
+    print(template.format("IV + Ciphertext", hexify(iv + ciphertext)))
 
 if __name__ == "__main__":
     main()
