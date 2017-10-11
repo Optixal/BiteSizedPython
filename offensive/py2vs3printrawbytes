@@ -1,0 +1,6 @@
+# Python 2
+print('\xFF')
+
+# Python 3
+import sys
+sys.stdout.buffer.write(b'\xFF\n')
